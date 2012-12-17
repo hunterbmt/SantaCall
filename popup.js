@@ -41,7 +41,7 @@ function openOptionPageIfConfigEmpty() {
 
 function sendOnClick() {
     var destNumber = $('#inputNumber').val();
-    var lang = $('#inputLanguage option:selected').val();
+    var lang = localStorage['language'];
     var msg = $('#inputMsg').val();
 
     if (!checkMaxLength(msg, 500)) {
@@ -49,10 +49,6 @@ function sendOnClick() {
         return;
     }
 
-    if (!validPhoneNumber(destNumber)) {
-        setStatus("Invalid Phone Number format", true);
-        return;
-    }
 	var url;
 	var checked = $('#use_user_url:checked').val();
         if (checked != undefined) {
@@ -87,9 +83,11 @@ chrome.extension.onRequest.addListener(
 function setStatus(msg, isError) {
     isError = typeof isError !== 'undefined' ? isError : false;
     if (isError) {
-        $('#status').addClass('text-error');
+		$('#status').removeClass('alert-success');
+        $('#status').addClass('alert-error');
     } else {
-        $('#status').addClass('text-success');
+		$('#status').removeClass('alert-error');
+        $('#status').addClass('alert-success');
     }
     $('#status').html(msg);
     $('#status').show().delay(5000).fadeOut('fast');

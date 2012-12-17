@@ -14,3 +14,6 @@ text-error{
 select{
    color:black;
 }
+ body {
+       max-height: 540px;
+ }

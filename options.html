@@ -6,14 +6,14 @@
 	</head>
 	<body>
 	<div class="contaner">
-		<h2>Call Me Back</h2>
+		<h2>Santa Call</h2>
 		<div class="row">
 			<div class="span3 bs-docs-sidebar">
 				<ul class="nav nav-list bs-docs-sidenav affix-top">
 					<li ><a href="#accountsetting" id="btn-accountsetting" ><i class="icon-chevron-right" ></i> Account Setting</a></li>
-					<li class ="hide"><a href="#advancedsetting" id="btn-advancedsetting"><i class="icon-chevron-right" ></i> Advanced Setting</a></li>
+					<li ><a href="#advancedsetting" id="btn-advancedsetting"><i class="icon-chevron-right" ></i> Advanced Setting</a></li>
 				</ul>
-				<img src="img/background.png"/>
+				<img src="img/background.png"/ style="max-height:530px">
 			</div>
 			<div class="span9">
 				<section id="accountsetting">
@@ -21,7 +21,7 @@
 						<h3>Account Setting</h3>
 						<div class="form-horizontal">
 							<div class="description">
-								The service is provided by Santa and Hoiio. You need to register a <a href="https://secure.hoiio.com/dev/Dev.html?#registrationEnterNumber" target="_blank">Hoiio developer account</a>, get your App ID and Access Token from Hoiio, then enter the required credentials below.<br>
+								The service is provided by Santa and Hoiio. You need to register a <a href="https://secure.hoiio.com/dev/Dev.html?#registrationEnterNumber" target="_blank">Hoiio developer account</a>, get your App ID and Access Token from Hoiio, then enter the required credentials below.(Your setting will be auto-save)<br>
 							</div>
 							<br/>
 							<div class="control-group">
@@ -36,12 +36,35 @@
 									<input type="text" id="inputAccessToken" placeholder="YOUR ACCESS TOKEN">
 								</div>
 							</div>
+						</div>
+					</div>
+				</section>
+				<section id="advancedsetting" class="hide">
+					<div class="page-header">
+						<h3>Advanced Option</h3>
+						<div class="form-horizontal">
+							<div class="description">
+								Config your message language and maximum time of this card (The time starts when your friends picks up the phone)
+							</div>
+							<br/>
+							<div class="control-group" id="languageDiv">
+								<label class="control-label" for="inputLanguage">Language:</label>
+								<div class="controls">
+									<select id="inputLanguage" >
+										<option value="en">English</option>
+										<option value="zh">Chinese</option>
+										<option value="zh-HK">Cantonese</option>
+										<option value="ja">Japanese</option>
+										<option value="ko">Korean</option>
+									</select>
+								</div>
+							</div>
 							<div class="control-group">
 								<label class="control-label" for="inputMaxDuration">Max Duration:</label>
 								<div class="controls">
-									<input type="text" value="30" id="inputMaxDuration" placeholder="The maximum duration(in seconds).">
+									<input type="text" style="min-width:220px" id="inputMaxDuration" placeholder="The maximum duration(in seconds).">
 								</div>
-							</div>
+							</div> 
 						</div>
 					</div>
 				</section>
