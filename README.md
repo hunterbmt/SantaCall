@@ -1,12 +1,8 @@
 # What is Call Me Back ? #
 
-This is the Chrome extension to send voice or sms message to your friends.
+This is the Chrome extension to send voice christmax card to your friends.
 
-Have you ever been in a situation when your mobile phone ran out of money, and you can no longer make a crucial call/SMS?
-
-When that happens, use this extension to send a Voice/SMS message to your friends or family. Let them call back (assuming incoming calls are free)!
-
-
+From Hoiio And Santa with love . Enjoy your christmax.
 
 # Installation #
 
