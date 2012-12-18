@@ -16,7 +16,7 @@ function loadUserSetting() {
     $('#inputAppId').val(localStorage['app_id'])
     $('#inputAccessToken').val(localStorage['access_token'])
 	if(localStorage['max_duration'] == undefined || localStorage['max_duration'] .length < 1){
-		localStorage['max_duration'] =30;
+		localStorage['max_duration'] = 300;
 	}
     $('#inputMaxDuration').val(localStorage['max_duration'])
 	var language = localStorage["language"];
