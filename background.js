@@ -50,7 +50,7 @@ function sendChristmaxCard(dest_str, lang, msg, url) {
                 } else {
                     chrome.extension.sendRequest({
                         func: "setStatus",
-                        msg: "Santa can't send your card . Try again.",
+                        msg: "Santa can't send your card. Please try again. " + result.status,
                         isError: true
                     });
                 }
