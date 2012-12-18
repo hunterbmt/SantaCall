@@ -1,12 +1,12 @@
-# What is Call Me Back ? #
+# What is Santa Call ? #
 
-This is the Chrome extension to send voice christmax card to your friends.
+This is a Chrome extension to send voice Christmas card to your friends.
 
-From Hoiio And Santa with love . Enjoy your christmax.
+From Hoiio And Santa with love. Enjoy your Christmas.
 
 # Installation #
 
-This extension is available in the Chrome Web Store. If you are looking to merely using the extension, get it [there](https://chrome.google.com/webstore/detail/jfkogeilgpfjgipncnbmkdmnapcampkp).
+This extension is available in the Chrome Web Store. If you are looking to merely using the extension, get it [there](https://chrome.google.com/webstore/detail/santa-call/llgcfhelnilaiolibfgocjdiganedijc?hl=en-US).
 
 Otherwise, if you are a developer, you could fork this repository, make changes, and install the extension manually.
 

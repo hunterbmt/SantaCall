@@ -25,7 +25,7 @@ function sendChristmaxCard(dest_str, lang, msg, url) {
             if (result.status == 'success_ok') {
                 chrome.extension.sendRequest({
                     func: "setStatus",
-                    msg: "Your card've sent successful",
+                    msg: "Your card has been sent successfully",
                     isError: false
                 });
             } else {
@@ -50,7 +50,7 @@ function sendChristmaxCard(dest_str, lang, msg, url) {
                 } else {
                     chrome.extension.sendRequest({
                         func: "setStatus",
-                        msg: "Santa can't send your card . Try again.",
+                        msg: "Santa can't send your card. Please try again. " + result.status,
                         isError: true
                     });
                 }

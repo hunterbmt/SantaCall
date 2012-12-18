@@ -5,25 +5,24 @@
 		<link type="text/css" rel="stylesheet" href="css/popup.css"
 	</head>
 	<body background="img/background.png" style="max-height:540px;color:white">
-	<div class="contaner">
+    <div class="contaner" style="height: 520px;">
 		<div class="row">
 			<div class="form-horizontal">
 				<div class="control-group">
 					<label class="control-label" for="inputNumber">Number: </label>
 					<div class="controls">
-						<input type="text" id="inputNumber" placeholder="+6501234567" style="min-width:220px">
+                        <input type="text" id="inputNumber" placeholder="+16501234567" style="min-width:220px">
 					</div>
 				</div>
 				<div class="control-group">
 					<label class="control-label" for="inputMsg">Message: </label>
 					<div class="controls">
-						<textarea type="text" id="inputMsg" style="min-width:220px" placeholder="You have a special gift from Santa" rows="5"></textarea>
+                        <textarea type="text" id="inputMsg" style="min-width:220px" placeholder="Hello. This is Santa calling, delivering you a special gift from your friend." rows="5"></textarea>
 					</div>
 				</div>
 				<div id="musicDiv">
 					<label class="control-label" for="inputMusic">Music:</label>
 					<select id="inputMusic" >
-						<option value="https://s3.amazonaws.com/misc.items/HappyNewYear.mp3">Happy new year</option>
 						<option value="https://s3.amazonaws.com/misc.items/WeWishYouaMerryChristmas.mp3">We Wish You a Merry Christmas</option>
 						<option value="https://s3.amazonaws.com/misc.items/JingleBells.mp3">Jingle Bells</option>
 						<option value="https://s3.amazonaws.com/misc.items/LastChristmas.mp3">Last Christmas</option>
@@ -31,15 +30,16 @@
 						<option value="https://s3.amazonaws.com/misc.items/TheFirstNoel.mp3">The First Noel</option>
 						<option value="https://s3.amazonaws.com/misc.items/ChristmasTime.mp3">Christmas Time</option>
 						<option value="https://s3.amazonaws.com/misc.items/AllIWantForChristmasIsYou.mp3">All I Want For Christmas Is You</option>
-					</select>
-					<input type="text" class="hide" id="userUrl" placeholder="your url here (mp3,wav,gsm and smaller 10MB)" style="min-width:220px">
+                        <option value="https://s3.amazonaws.com/misc.items/HappyNewYear.mp3">Happy new year</option>
+                    </select>
+                    <input type="text" class="hide" id="userUrl" placeholder="Enter your mp3 url (max 10MB)" style="min-width:220px">
 				</div>
 			</div>
 		</div>
 		<br/>
 		<div class="row">
 			<input type="checkbox" id="use_user_url" style="margin-right: 15px;margin-bottom: 5px;">
-			<label class="control-label" for="use_user_url" style="display:inline">use my music</label>
+			<label class="control-label" for="use_user_url" style="display:inline">Use my music</label>
 		</div>
 		<br/>
 		<div class="row">
