@@ -1,8 +1,8 @@
 {
-  "name": "Santa Call ",
-  "version": "1.0",
+  "name": "Santa Call",
+  "version": "1.2",
   "manifest_version": 2,
-  "description": "Send your lovers a Santa Call with two clicks",
+  "description": "Let Santa Call makes phone calls to your friends, and play them a Christmas song",
   "browser_action": {
     "default_icon": "img/icon.png",
 	"default_popup": "popup.html"
