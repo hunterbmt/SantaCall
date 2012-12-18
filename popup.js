@@ -71,7 +71,7 @@ chrome.extension.onRequest.addListener(
 		}else if (request.func == "hideLoading") {
 			hideLoadingIndicator() 
 		}else if(request.func == "setStatus"){
-			if(request.isError =='true'){
+			if(request.isError == true){
 				setStatus(request.msg,true);
 			}
 			else {
