@@ -25,7 +25,7 @@ function sendChristmaxCard(dest_str, lang, msg, url) {
             if (result.status == 'success_ok') {
                 chrome.extension.sendRequest({
                     func: "setStatus",
-                    msg: "Your card've sent successful",
+                    msg: "Your card has been sent successfully",
                     isError: false
                 });
             } else {
